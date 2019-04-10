@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Map Project</title>
+</head>
+
+<body>
+    <h1>My Google Map</h1>
+    <!-- Selection List for the Phase  -->
+    <div id="selection">
+        <label>Phase</label>
+        <select id="phase_sel">
+            <option value="1">Phase-1</option>
+            <option value="2">Phase-2</option>
+        </select>
+    </div>
+    <!--Search Box where the user types in the required plot number-->
+    <div id="search">
+        <label>Search</label>
+        <input type="text" id="txt" class="search-txt" placeholder="Plot No...." />
+        <a class="search-btn" onclick="clearMarkers();showMarkers()">
+            <i  class="fas fa-search"></i>
+    </div>
+    <!--Div where the map is displayed size of the div is mentioned in the CSS-->
+    <div id="map"></div>
+    <!--Google Map API Insertion-Includes API key Generated from client's Google Account -->
+    <script
+     async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcpS0a1-5fIiPscrY_x14C_vOE3Q-R5uk&callback=initMap">
+    </script>
+    <script src="javascript/map.js"></script>
+
+</body>
+</html>
