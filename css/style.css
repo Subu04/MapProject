@@ -1,0 +1,15 @@
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+#selection {
+  text-align: center;
+  padding: 5px;
+}
+
+#search {
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+}
